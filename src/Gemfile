@@ -3,4 +3,5 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
-gem 'kitchen', github: 'openstax/kitchen', ref: 'ceb659b19af8a9c3788dac47490519e6193338ff'
+# gem 'kitchen', github: 'openstax/kitchen', ref: 'ceb659b19af8a9c3788dac47490519e6193338ff'
+gem 'byebug'

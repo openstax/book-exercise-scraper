@@ -11,8 +11,10 @@ RUN apt-get update && apt-get install -y \
 RUN gem install bundler:2.1.4 && \
     bundle config set silence_root_warning 'true'
 
-COPY src/Gemfile* /tmp/
+#COPY src/Gemfile* /tmp/
+#
+#RUN cd /tmp && \
+#    bundle install && \
+#   rm -rf /root/.bundle/cache/*
 
-RUN cd /tmp && \
-    bundle install && \
-    rm -rf /root/.bundle/cache/*
+
